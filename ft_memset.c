@@ -6,14 +6,14 @@
 /*   By: albranco <albranco@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/27 19:20:48 by albranco          #+#    #+#             */
-/*   Updated: 2026/10/27 19:25:52 by albranco         ###   ########.fr       */
+/*   Updated: 2026/10/27 19:27:20 by albranco         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-void	*memset(void *s, int c, size_t n)
+void	*ft_memset(void *s, int c, size_t n)
 {
 	size_t			i;
-	unsigned char	*j;
+	unsigned char	*str;
 
 	str = (unsigned char *)s;
 	i = 0;
