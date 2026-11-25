@@ -6,7 +6,7 @@
 /*   By: albranco <albranco@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/11/24 16:51:58 by albranco          #+#    #+#             */
-/*   Updated: 2026/11/24 16:58:22 by albranco         ###   ########.fr       */
+/*   Updated: 2026/11/25 13:24:09 by albranco         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,28 +22,17 @@ t_list	*ft_lstlast(t_list *lst)
 }
 
 // #include <stdio.h>
-// int main(void)
+
+// int	main(void)
 // {
-// 	t_list *list = NULL;
-// 	t_list *node1 = ft_lstnew("first");
-// 	t_list *node2 = ft_lstnew("second");
-// 	t_list *node3 = ft_lstnew("third");
-//
-// 	ft_lstadd_back(&list, ft_lstnew("first"));
-//  ft_lstadd_back(&list, ft_lstnew("second"));
-//  ft_lstadd_back(&list, ft_lstnew("third"));
-//
-//  t_list *last = ft_lstlast(list);
-//  if (last)
-//      printf("Last node content: %s\n", (char *)last->content);
-//  else
-//      printf("List is empty\n");
-//
-//  // Test with empty list
-//  t_list *empty = NULL;
-//  t_list *last_empty = ft_lstlast(NULL);
-//  if (last_empty == NULL)
-//      printf("Empty list returns NULL correctly\n");
-//
-//  return (0);
+// 	t_list	*lista = ft_lstnew("A");
+// 	t_list	*lista2 = ft_lstnew("B");
+// 	t_list	*lista3 = ft_lstnew("C");
+// 	t_list	*lastlist;
+
+// 	ft_lstadd_back(&lista, lista2);
+// 	ft_lstadd_back(&lista, lista3);
+
+// 	lastlist =ft_lstlast(lista);
+// 	printf("%s", (char *)lastlist -> content);
 // }

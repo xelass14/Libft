@@ -6,7 +6,7 @@
 /*   By: albranco <albranco@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/11/24 15:55:06 by albranco          #+#    #+#             */
-/*   Updated: 2026/11/24 16:54:58 by albranco         ###   ########.fr       */
+/*   Updated: 2026/11/25 12:39:32 by albranco         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,3 +23,11 @@ t_list	*ft_lstnew(void *content)
 	node -> next = NULL;
 	return (node);
 }
+
+// #include <stdio.h>
+
+// int	main(void)
+// {
+// 	t_list	*lista = ft_lstnew("Hello World");
+// 	printf("%s", (char *)lista -> content);
+// }

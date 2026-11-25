@@ -6,7 +6,7 @@
 /*   By: albranco <albranco@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/27 19:40:33 by albranco          #+#    #+#             */
-/*   Updated: 2026/11/19 10:13:57 by albranco         ###   ########.fr       */
+/*   Updated: 2026/11/25 14:04:21 by albranco         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -32,7 +32,11 @@ void	ft_bzero(void *s, size_t n)
 // 	char s[6] = "Hello";
 // 	ft_bzero(s, 3);
 // 	printf("ft_bzero: ");
-// 	for (int i = 0; i < 5; i++)
-// 		printf("%d ", s[i]);
+// 	size_t i = 0;
+// 	while (i < 5)
+// 	{
+// 		printf("%c ", s[i]);
+// 		i++;
+// 	}
 // 	printf("\n");
 // }

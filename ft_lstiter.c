@@ -6,7 +6,7 @@
 /*   By: albranco <albranco@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/11/24 17:38:08 by albranco          #+#    #+#             */
-/*   Updated: 2026/11/24 17:50:57 by albranco         ###   ########.fr       */
+/*   Updated: 2026/11/25 13:23:54 by albranco         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,22 +24,32 @@ void	ft_lstiter(t_list *lst, void (*f)(void *))
 }
 
 // #include <stdio.h>
-// void print_content(void *content)
+
+// void	ft_str_tolower(char *str)
 // {
-// 	printf("%s ", (char *)content);
+// 	if (!str)
+// 		return ;
+// 	while (*str)
+// 	{
+// 		*str = ft_tolower(*str);
+// 		str++;
+// 	}
 // }
-//
-// int main(void)
+
+// int	main(void)
 // {
-// 	t_list *list = NULL;
-//  ft_lstadd_back(&list, ft_lstnew("first"));
-//  ft_lstadd_back(&list, ft_lstnew("second"));
-//  ft_lstadd_back(&list, ft_lstnew("third"));
-//
-//  printf("List contents: ");
-//  ft_lstiter(list, print_content);
-//  printf("\n");
-//
-//  ft_lstclear(&list, free);
-//  return (0);
+// 	t_list	*lista = ft_lstnew(ft_strdup("A"));
+// 	t_list	*lista2 = ft_lstnew(ft_strdup("B"));
+// 	t_list	*lista3 = ft_lstnew(ft_strdup("C"));
+
+// 	ft_lstadd_back(&lista, lista2);
+// 	ft_lstadd_back(&lista, lista3);
+
+// 	ft_lstiter(lista, (void *)ft_str_tolower);
+
+// 	while (lista)
+// 	{
+// 		printf("%s\n", (char *) lista -> content);
+// 		lista = lista -> next;
+// 	}
 // }

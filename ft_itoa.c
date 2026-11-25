@@ -6,7 +6,7 @@
 /*   By: albranco <albranco@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/11/23 17:49:40 by albranco          #+#    #+#             */
-/*   Updated: 2026/11/24 10:17:04 by albranco         ###   ########.fr       */
+/*   Updated: 2026/11/25 14:05:24 by albranco         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -75,9 +75,7 @@ char	*ft_itoa(int n)
 // 	while (i < 7)
 // 	{
 // 		char *s = ft_itoa(test[i]);
-// 		// Imprime o input e o output da função
 // 		printf("ft_itoa(%d) = %s\n", test[i], s);
-// 		// Liberta memória alocada por ft_itoa
 // 		free(s);
 // 		i++;
 // 	}

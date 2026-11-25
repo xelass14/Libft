@@ -6,7 +6,7 @@
 /*   By: albranco <albranco@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/11/24 18:55:34 by albranco          #+#    #+#             */
-/*   Updated: 2026/11/25 11:59:00 by albranco         ###   ########.fr       */
+/*   Updated: 2026/11/25 13:57:03 by albranco         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -36,3 +36,33 @@ t_list	*ft_lstmap(t_list *lst, void *(*f)(void *), void (*del)(void *))
 	}
 	return (newlist);
 }
+
+// #include <stdio.h>
+
+// void	ft_str_tolower(char *str)
+// {
+// 	if (!str)
+// 		return ;
+// 	while (*str)
+// 	{
+// 		*str = ft_tolower(*str);
+// 		str++;
+// 	}
+// }
+
+// int	main(void)
+// {
+// 	t_list	*lista = ft_lstnew(ft_strdup("A"));
+// 	t_list	*lista2 = ft_lstnew(ft_strdup("B"));
+// 	t_list	*lista3 = ft_lstnew(ft_strdup("C"));
+
+// 	ft_lstadd_back(&lista, lista2);
+// 	ft_lstadd_back(&lista, lista3);
+
+// 	ft_lstmap(lista, (void*)ft_str_tolower, (void *)free);
+// 	while (lista)
+// 	{
+// 		printf("%s\n", (char *) lista -> content);
+// 		lista = lista -> next;
+// 	}
+// }
