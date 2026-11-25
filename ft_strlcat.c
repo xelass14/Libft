@@ -6,7 +6,7 @@
 /*   By: albranco <albranco@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/11/19 19:08:07 by albranco          #+#    #+#             */
-/*   Updated: 2026/11/25 11:10:08 by albranco         ###   ########.fr       */
+/*   Updated: 2026/11/25 15:31:56 by albranco         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,8 +28,8 @@ size_t	ft_strlcat(char *dst, const char *src, size_t size)
 		dstlen++;
 	}
 	if (size <= dstlen)
-		return (size + ft_strlen(src));
-	i = ft_strlen(dst);
+		return (size + srclen);
+	i = dstlen;
 	j = 0;
 	while (i < size - 1 && src[j])
 	{
@@ -38,7 +38,7 @@ size_t	ft_strlcat(char *dst, const char *src, size_t size)
 		j++;
 	}
 	dst[i] = '\0';
-	return (ft_strlen(dst) + srclen);
+	return (dstlen + srclen);
 }
 
 // #include <stdio.h>
