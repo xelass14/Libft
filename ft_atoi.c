@@ -6,7 +6,7 @@
 /*   By: albranco <albranco@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/11/19 10:52:09 by albranco          #+#    #+#             */
-/*   Updated: 2026/11/23 09:35:32 by albranco         ###   ########.fr       */
+/*   Updated: 2026/11/25 12:23:12 by albranco         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -42,6 +42,6 @@ int	ft_atoi(const char *nptr)
 // #include <stdio.h>
 // int	main(void)
 // {
-// 	char *s = "   -42";
+// 	char *s = "-2147483648";
 // 	printf("ft_atoi(\"%s\") = %d\n", s, ft_atoi(s));
 // }

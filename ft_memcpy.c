@@ -6,7 +6,7 @@
 /*   By: albranco <albranco@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/11/19 11:42:15 by albranco          #+#    #+#             */
-/*   Updated: 2026/11/19 17:51:19 by albranco         ###   ########.fr       */
+/*   Updated: 2026/11/25 12:17:12 by albranco         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,6 +18,8 @@ void	*ft_memcpy(void *dst, const void *src, size_t n)
 	unsigned char	*d;
 	unsigned char	*s;
 
+	if (dst == NULL && src == NULL)
+		return (NULL);
 	i = 0;
 	d = (unsigned char *) dst;
 	s = (unsigned char *) src;

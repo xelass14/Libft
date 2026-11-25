@@ -2,7 +2,7 @@
 
 # libft
 
-My implementation of the 42 libft project — a C library with standard and additional functions.
+My implementation of the 42 libft project — a C library that reimplements standard libc functions and provides additional utilities. The final deliverable is a static library **`libft.a`** created with `ar` (never `libtool`).
 
 ## Description
 
@@ -13,20 +13,6 @@ The library is organized in **3 parts**:
 - **Part 1** (23 functions): Reimplementation of standard libc functions with `ft_` prefix
 - **Part 2** (11 functions): Additional utility functions not in standard libc
 - **Part 3** (9 functions): Linked list manipulation using `t_list` structure
-
-## Project Structure
-
-```
-libft/
-├── libft.h              # Header with all prototypes
-├── Makefile             # Build rules
-├── ft_*.c               # Part 1: libc functions (23)
-├── ft_*.c               # Part 2: additional functions (11)
-├── ft_*.c               # Part 3: linked list functions (9)
-└── README.md            # This file
-```
-
-## Functions Implemented
 
 ### Part 1 — Libc Functions (23)
 
@@ -87,7 +73,9 @@ libft/
 | `ft_lstiter` | Iterate function on list |
 | `ft_lstmap` | Map function on list |
 
-## Compilation
+## Instructions
+
+### Compilation
 
 ```bash
 make          # Build libft.a
@@ -96,7 +84,7 @@ make fclean   # Remove object files + libft.a
 make re       # Rebuild from scratch
 ```
 
-## Usage
+### Usage
 
 ```c
 #include "libft.h"
@@ -115,12 +103,11 @@ Compile with:
 cc -Wall -Wextra -Werror -I. main.c -L. -lft -o main
 ```
 
-## Norminette
-
-All files pass `norminette` checks (including header).
-
+Run:
 ```bash
-norminette *.c libft.h
+./a.out
+# or
+./a.out
 ```
 
 ## Resources
@@ -128,6 +115,7 @@ norminette *.c libft.h
 - [42 Subject v19.3](https://github.com/42Paris/libft)
 - [Norminette](https://github.com/42School/norminette)
 - [man pages](https://man7.org/linux/man-pages/) — reference for libc behavior
+- [C Standard Library Reference](https://en.cppreference.com/w/c)
 
 ## AI Usage
 
