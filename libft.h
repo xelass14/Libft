@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   libft.h                                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: albranco <albranco@student.42lisboa.com    +#+  +:+       +#+        */
+/*   By: albranco <albranco@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/11/19 10:13:16 by albranco          #+#    #+#             */
-/*   Updated: 2026/11/24 11:32:34 by albranco         ###   ########.fr       */
+/*   Updated: 2026/11/25 16:47:08 by albranco         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,6 +15,7 @@
 
 # include <stdlib.h>
 # include <unistd.h>
+# include <stdint.h>
 
 int				ft_isascii(int c);
 int				ft_isdigit(int c);

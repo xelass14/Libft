@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_lstmap.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: albranco <albranco@student.42lisboa.com    +#+  +:+       +#+        */
+/*   By: albranco <albranco@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/11/24 18:55:34 by albranco          #+#    #+#             */
-/*   Updated: 2026/11/25 13:57:03 by albranco         ###   ########.fr       */
+/*   Updated: 2026/11/25 16:31:50 by albranco         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,7 +18,7 @@ t_list	*ft_lstmap(t_list *lst, void *(*f)(void *), void (*del)(void *))
 	t_list	*node;
 	void	*content;
 
-	if (lst == NULL | f == NULL | del == NULL)
+	if (lst == NULL || f == NULL || del == NULL)
 		return (NULL);
 	newlist = NULL;
 	while (lst != NULL)
