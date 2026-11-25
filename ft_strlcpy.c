@@ -35,3 +35,17 @@ size_t	ft_strlcpy(char *dst, const char *src, size_t size)
 	d[i] = '\0';
 	return (srclen);
 }
+
+// #include <stdio.h>
+// int	main(void)
+// {
+// 	char dst[10];
+// 	char *src = "Hello World";
+// 	size_t size = 10;
+// 	size_t len = ft_strlcpy(dst, src, size);
+// 	printf("src: \"%s\"\n", src);
+// 	printf("dst: \"%s\"\n", dst);
+//  printf("returned length: %zu\n", len);
+//  printf("dst content: %s\n", dst);
+//  return (0);
+// }

@@ -1,12 +1,12 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strrchr.c                                       :+:      ::::::::   */
+/*   ft_strrchr.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: albranco <albranco@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/11/19 08:23:40 by albranco          #+#    #+#             */
-/*   Updated: 2026/11/24 12:02:33 by albranco         ###   ########.fr       */
+/*   Updated: 2026/11/25 14:35:35 by albranco         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,3 +31,16 @@ char	*ft_strrchr(const char *s, int c)
 		return ((char *)(s + i));
 	return (lf);
 }
+
+// #include <stdio.h>
+// int	main(void)
+// {
+// 	char *s = "Hello World";
+// 	char c = 'l';
+// 	char *res = ft_strrchr(s, c);
+// 	if (res)
+// 		printf("Found at position %zu: '%s'\n", res - s, res);
+// 	else
+// 		printf("Not found\n");
+// 	return (0);
+// }

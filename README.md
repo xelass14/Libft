@@ -163,6 +163,8 @@ This project was developed following 42's AI usage guidelines:
 - Used AI only for explanations, debugging assistance, and code review
 - All code was written and understood by me
 
+**Documentation note:** A comprehensive Obsidian guide documenting the implementation details, edge cases, and testing strategies for each function will be published separately for future reference.
+
 ## Author
 
 albranco — 42 Lisboa

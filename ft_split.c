@@ -83,3 +83,35 @@ char	**ft_split(char const *s, char c)
 		return (NULL);
 	return (fill_split(res, s, c, words));
 }
+
+// #include <stdio.h>
+// int	main(void)
+// {
+// 	char *s = "  hello   world  test  ";
+// 	char c = ' ';
+// 	char **result = ft_split(s, c);
+//
+//  if (!result)
+//  {
+//      printf("NULL returned\n");
+//      return (1);
+//  }
+//
+//  size_t i = 0;
+//  while (result[i])
+//  {
+//      printf("word[%zu]: \"%s\"\n", i, result[i]);
+//      i++;
+//  }
+//
+//  // Free the result
+//  size_t j = 0;
+//  while (result[j])
+//  {
+//      free(result[j]);
+//      j++;
+//  }
+//  free(result);
+//
+//  return (0);
+// }

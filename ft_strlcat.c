@@ -28,8 +28,8 @@ size_t	ft_strlcat(char *dst, const char *src, size_t size)
 		dstlen++;
 	}
 	if (size <= dstlen)
-		return (size + srclen);
-	i = dstlen;
+		return (size + ft_strlen(src));
+	i = ft_strlen(dst);
 	j = 0;
 	while (i < size - 1 && src[j])
 	{
@@ -38,5 +38,20 @@ size_t	ft_strlcat(char *dst, const char *src, size_t size)
 		j++;
 	}
 	dst[i] = '\0';
-	return (dstlen + srclen);
+	return (ft_strlen(dst) + srclen);
 }
+
+// #include <stdio.h>
+// int main(void)
+// {
+// 	char dst[20] = "Hello ";
+// 	char *src = "World";
+// 	size_t size = 20;
+// 	size_t len = ft_strlcat(dst, src, sizeof(dst));
+//  printf("src: \"%s\"\n", src);
+//  printf("dst before: \"%s\"\n", "Hello ");
+//  printf("dst after: \"%s\"\n", dst);
+//  printf("returned length: %zu\n", len);
+//  printf("dst content: %s\n", dst);
+//  return (0);
+// }
